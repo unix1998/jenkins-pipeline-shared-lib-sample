@@ -10,7 +10,7 @@ public class Sample {
     @Override
     public String toString() {
         return "Sample{" +
-                "x=" + x +
+                "xxxxxxxx=" + x +
                 ", y=" + y +
                 '}';
     }

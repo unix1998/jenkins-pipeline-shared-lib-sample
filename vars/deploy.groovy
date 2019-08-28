@@ -5,7 +5,7 @@ def call(body) {
 
     new Deployer(script:this).run()
 
-    echo "Deployed"
+    echo "Deployed SSSSSSSSS"
     currentBuild.result = 'SUCCESS' //FAILURE to fail
 
     return this
