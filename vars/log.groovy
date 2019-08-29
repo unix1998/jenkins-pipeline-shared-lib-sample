@@ -1,10 +1,6 @@
 def call(body)
-{
-def info(message) {
-    echo "INFO: ${message}"
-}
+ {
+    echo "INFO: XXXXX${message}"
 
-def warn(message) {
-    echo "WARNING: ${message}"
-}
+    echo "WARNING: YYYYYY${message}"
 }
