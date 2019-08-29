@@ -1,8 +1,8 @@
 #!/usr/bin/env groovy
-def call(body)
- {
-    echo "INFO: XXXXX${message}"
+def info(message) {
+    echo "INFO: ${message}"
+}
 
-    echo "WARNING: YYYYYY${message}"
-    return this 
+def warning(message) {
+    echo "WARNING: ${message}"
 }
