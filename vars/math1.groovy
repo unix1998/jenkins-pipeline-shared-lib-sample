@@ -3,7 +3,7 @@ def add(Integer x, Integer y) {
     println(x+y) 
     return x+y
 }
-def power1(Integer x ,Float Y) {
-    println(pow(a,y))
-    return pow(a,y) 
+def power1(Integer x ,double Y) {
+    println(math.pow(a,y))
+    return math.pow(a,y) 
     }
