@@ -4,5 +4,7 @@ def add(Integer x, Integer y) {
     return x+y
 }
 def power1(Integer x ,Long y) {
+    println(x**y)
     return x**y
+
 }
