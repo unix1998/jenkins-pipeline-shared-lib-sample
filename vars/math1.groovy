@@ -3,6 +3,6 @@ def add(Integer x, Integer y) {
     println(x+y) 
     return x+y
 }
-def power1(Integer x ,double Y) {
-    return x*y
+def power1(Integer x ,long Y) {
+    return x**y
     }
