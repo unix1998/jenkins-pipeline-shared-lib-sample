@@ -4,6 +4,5 @@ def add(Integer x, Integer y) {
     return x+y
 }
 def power1(Integer x ,double Y) {
-    println(math.pow(a,y))
-    return math.pow(a,y) 
+    return x*y
     }
