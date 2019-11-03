@@ -8,6 +8,7 @@ def call(body) {
     node {
      stage ('hardware info'){
         echo ' step1'
+        echo '################'
         echo config.HW
       }
      stage ('config info') {
