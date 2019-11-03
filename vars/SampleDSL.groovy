@@ -6,11 +6,11 @@ def call(body) {
     body()
 
     node {
-     stage ' hardware info'{
+     stage 'hardware info'{
         echo ' step1'
         echo config.Ho
       }
-     stage ' config info' {
+     stage 'config info' {
         echo 'stage 2'
         echo config.P1
       }
