@@ -14,6 +14,7 @@ def call(body) {
      stage ('config info') {
         echo 'stage 2'
         echo config.P1
+        echo 'stage 3 , Feb '
       }
      stage ('3rd stage ') {
         echo 'stage 3'
