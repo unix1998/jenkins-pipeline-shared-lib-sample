@@ -20,6 +20,7 @@ def call(body) {
         echo 'stage 3'
             
         echo config.Custom
+        sayHello config.guest_name
       }
     }
 }
