@@ -22,7 +22,7 @@ def call(body) {
         echo config.Custom
         echo config.Guest_name
         echo "before Guest"
-        aa = math1.power(3,3)
+        aa = math1.power1(3,3)
         println aa
         sayHello config.Guest_name
       }
