@@ -20,7 +20,7 @@ def call(body) {
         echo "stage 3"
             
         echo jenkins_config.Custom
-        echo jnekins_config.Guest_name
+        echo jenkins_config.Guest_name
         echo "before Guest"
         aa = math1.power1(3,3)
         println aa
