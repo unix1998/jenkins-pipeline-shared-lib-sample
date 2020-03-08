@@ -17,9 +17,10 @@ def call(body) {
         echo 'stage 3 , Feb '
       }
      stage ('3rd stage ') {
-        echo 'stage 3'
+        echo "stage 3"
             
         echo config.Custom
+        echo config.Guest_name
         sayHello config.Guest_name
       }
     }
