@@ -1,6 +1,6 @@
 // vars/sampleDSL.groovy
 def call(body) {
-    def config = [:]
+    def jenkins_config = [:]
     body.resolveStrategy = Closure.DELEGATE_FIRST
     body.delegate = jenkins_config
     body()
