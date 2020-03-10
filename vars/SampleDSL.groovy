@@ -15,7 +15,7 @@ def call(body) {
         echo 'stage 2'
         echo jenkins_config.P1
         echo "stage 3 , March"
-        Method1.power2(2,3)
+        Method1(2,3)
       }
      stage ('3rd stage ') {
         echo "stage 3"
