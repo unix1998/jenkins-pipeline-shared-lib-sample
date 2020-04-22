@@ -15,8 +15,8 @@ def call(body) {
         echo "GIT_PREVIOUS_SUCCESSFUL_COMMIT" : $GIT_PREVIOUS_SUCCESSFUL_COMMIT
         echo "GIT_PREVIOUS_SUCCESSFUL_COMMIT" : $GIT_PREVIOUS_SUCCESSFUL_COMMIT
         echo $GIT_PREVIOUS_SUCCESSFUL_COMMIT
-        echo ${env.BRANCH_NAME}
-        echo ${env.GIT_PREVIOUS_COMMIT}
+        #echo ${env.BRANCH_NAME}
+        #echo ${env.GIT_PREVIOUS_COMMIT}
         '''
         //def since1 = System.getenv('GIT_PREVIOUS_SUCCESSFUL_COMMIT') 
          def since1 = env.GIT_PREVIOUS_SUCCESSFUL_COMMIT
