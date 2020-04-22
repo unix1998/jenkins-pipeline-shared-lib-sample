@@ -17,6 +17,7 @@ def call(body) {
         echo $GIT_PREVIOUS_SUCCESSFUL_COMMIT
         '''
         def since1 = System.getenv('GIT_PREVIOUS_SUCCESSFUL_COMMIT') 
+        println (GIT_PREVIOUS_SUCCESSFUL_COMMIT)
         println(since1)
       }
      stage ('config info') {
