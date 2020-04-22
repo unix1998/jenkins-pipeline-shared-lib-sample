@@ -10,6 +10,10 @@ def call(body) {
         echo ' step1'
         echo '################'
         echo jenkins_config.HW
+        sh '''
+        echo "GIT_PREVIOUS_SUCCESSFUL_COMMIT" : $IT_PREVIOUS_SUCCESSFUL_COMMIT
+        echo "GIT_PREVIOUS_SUCCESSFUL_COMMIT" : $IT_PREVIOUS_SUCCESSFUL_COMMIT
+        '''
       }
      stage ('config info') {
         echo 'stage 2'
