@@ -10,11 +10,14 @@ def call(body) {
         echo ' step1'
         echo '################'
         echo jenkins_config.HW
+         
         sh '''
         echo "GIT_PREVIOUS_SUCCESSFUL_COMMIT" : $GIT_PREVIOUS_SUCCESSFUL_COMMIT
         echo "GIT_PREVIOUS_SUCCESSFUL_COMMIT" : $GIT_PREVIOUS_SUCCESSFUL_COMMIT
         echo $GIT_PREVIOUS_SUCCESSFUL_COMMIT
         '''
+        def since1 = System.getenv('GIT_PREVIOUS_SUCCESSFUL_COMMIT') 
+        println(since1)
       }
      stage ('config info') {
         echo 'stage 2'
