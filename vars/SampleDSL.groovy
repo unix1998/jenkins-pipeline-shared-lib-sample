@@ -17,11 +17,13 @@ def call(body) {
         echo $GIT_PREVIOUS_SUCCESSFUL_COMMIT
         #echo ${env.BRANCH_NAME}
         #echo ${env.GIT_PREVIOUS_COMMIT}
+        echo $JOB_URL
         '''
         //def since1 = System.getenv('GIT_PREVIOUS_SUCCESSFUL_COMMIT') 
          def since1 = env.GIT_PREVIOUS_SUCCESSFUL_COMMIT
         println ('GIT_PREVIOUS_SUCCESSFUL_COMMIT')
         println(since1)
+        println(env.GIT_PREVIOUS_SUCCESSFUL_COMMIT)
       }
      stage ('config info') {
         echo 'stage 2'
