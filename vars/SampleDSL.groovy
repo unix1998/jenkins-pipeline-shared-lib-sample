@@ -6,7 +6,7 @@ def call(body) {
     body()
 
     pipeline {
-        agent { label 'build-server' }
+      //  agent { label 'build-server' }
 
         stages {
             stage('Initialization') {
