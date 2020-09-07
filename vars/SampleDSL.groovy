@@ -24,6 +24,7 @@ def call(body) {
                             credentialsId = config.credentialsId
                             branches = config.branches
                             commit = config.commit
+                            echo (config.branches)
                         }
                     }
                 }
