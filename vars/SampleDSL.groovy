@@ -5,20 +5,20 @@ def call(body) {
     body.delegate = config
     body()
 
-    pipeline {
+   node ('master') {
       //  agent { label 'build-server' }
 
-        stages {
+       
             stage('Initialization') {
                 steps {
-                    script {
+                    
                        echo "initialization"
-                    }
+                   
                 }
             }
             stage('CI') {
                 steps{
-                    script{
+                    
                         gitCheckout{
                             repoUrl = config.repoUrl
                             credentialsId = config.credentialsId
@@ -26,12 +26,12 @@ def call(body) {
                             commit = config.commit
                             echo (config.branches)
                         }
-                    }
+                    
                 }
             }
             stage('Service') {
             echo "Start docker service"
           }
         }
-    }
+    
 }
