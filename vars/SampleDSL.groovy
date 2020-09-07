@@ -18,7 +18,7 @@ def call(body) {
             }
             stage('CI') {
                 steps{
-                    
+                     /*
                         gitCheckout{
                             repoUrl = config.repoUrl
                             credentialsId = config.credentialsId
@@ -26,7 +26,8 @@ def call(body) {
                             commit = config.commit
                             echo (config.branches)
                         }
-                    
+                      */
+                    echo ('test 2020 Sep sep')
                 }
             }
             stage('Service') {
