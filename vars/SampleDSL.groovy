@@ -17,18 +17,9 @@ def call(body) {
                 }
             }
             stage('CI') {
-                steps{
-                     /*
-                        gitCheckout{
-                            repoUrl = config.repoUrl
-                            credentialsId = config.credentialsId
-                            branches = config.branches
-                            commit = config.commit
-                            echo (config.branches)
-                        }
-                      */
+                
                     echo ('test 2020 Sep sep')
-                }
+             
             }
             stage('Service') {
             echo "Start docker service"
