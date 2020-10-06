@@ -9,7 +9,7 @@ def call(body) {
         
          stage ( ' stage 0: input parameter or choice ') {
          properties(
-             [parameters([choice(choices: ["DEV", "UAT","QA". "PPROD","PROD"].join("\n"),
+             [parameters([choice(choices: ["DEV", "UAT","QA","PPROD","PROD"].join("\n"),
                description: 'choice parameter for build ', 
                name: 'my_CHOICE')])])
         
