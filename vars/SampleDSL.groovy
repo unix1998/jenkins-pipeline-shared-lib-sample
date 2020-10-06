@@ -6,9 +6,16 @@ def call(body) {
     body()
 
     node {
+        stage ( 'input demo') {
+              properties(
+             [parameters([choice(choices: ["DEV", "UAT","QA". "PPROD","PROD"].join("\n"),
+               description: 'choice parameter for build ', 
+               name: 'my_CHOICE')])])
+        }
      stage ('hardware info'){
         echo ' step1'
-        echo '################'
+        echo '######my_CHOICE##########'
+        echo my_CHOICE
         echo config.HW
         sh '''
         echo "GIT_PREVIOUS_SUCCESSFUL_COMMIT" : $IT_PREVIOUS_SUCCESSFUL_COMMIT
