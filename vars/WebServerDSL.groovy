@@ -1,4 +1,4 @@
-cimport org.example.WebServer
+import org.example.WebServer
 
 def call(Closure closure) {
     def server = new WebServer()
