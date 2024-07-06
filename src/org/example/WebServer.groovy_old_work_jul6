@@ -14,12 +14,10 @@ class WebServer {
     }
 
     def route(Closure closure) {
-        println 'route method called'
         def routeConfig = [:]
         closure.delegate = routeConfig
         closure.resolveStrategy = Closure.DELEGATE_FIRST
         closure()
-        println routeConfig
         routes << routeConfig
     }
 
